@@ -47,6 +47,7 @@ src_prepare() {
 		sed -i -e 's@USE_EMTEE=false@USE_EMTEE=true@g' "${S}/${PN}" || \
 			die "Failed to patch script to reflect emtee USE flag."
 	fi
+	eapply_user
 	epatch_user
 }
 src_install() {
