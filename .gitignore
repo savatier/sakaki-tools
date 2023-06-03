@@ -2,3 +2,4 @@
 preparchive.sh
 signdigest.sh
 DIGESTS
+metadata/md5-cache/
