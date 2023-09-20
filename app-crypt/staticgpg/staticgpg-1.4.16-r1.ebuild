@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=9
+EAPI=6
 
 inherit eutils flag-o-matic toolchain-funcs
 

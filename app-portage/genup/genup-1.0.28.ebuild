@@ -48,7 +48,6 @@ src_prepare() {
 			die "Failed to patch script to reflect emtee USE flag."
 	fi
 	eapply_user
-	epatch_user
 }
 src_install() {
 	dosbin "${PN}"

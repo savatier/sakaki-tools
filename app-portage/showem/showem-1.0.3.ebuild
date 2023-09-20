@@ -3,7 +3,7 @@
 # License: GPL v2
 # NO WARRANTY
 
-EAPI=9
+EAPI=6
 
 inherit eutils
 

@@ -1,19 +1,19 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=9
+EAPI=6
 
 inherit eutils
 
 DESCRIPTION="Build secure boot EFI kernel with LUKS, LVM and plymouth"
 BASE_SERVER_URI="https://github.com/sakaki-"
-HOMEPAGE="${BASE_SERVER_URI}/${PN}"
+#HOMEPAGE="${BASE_SERVER_URI}/${PN}"
 SRC_URI="${BASE_SERVER_URI}/${PN}/releases/download/${PV}/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+plymouth"
+IUSE="plymouth"
 
 RESTRICT="mirror"
 
@@ -38,7 +38,7 @@ src_prepare() {
 		sed -i -e 's@USE_PLYMOUTH=true@USE_PLYMOUTH=false@g' "${S}/${PN}" || \
 			die "Failed to patch script to reflect omitted plymouth USE flag."
 	fi
-	epatch_user
+	eapply_user
 }
 src_install() {
 	dosbin "${PN}"
