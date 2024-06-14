@@ -5,8 +5,6 @@
 
 EAPI=6
 
-inherit eutils
-
 DESCRIPTION="View output of a parallel emerge from a separate terminal"
 BASE_SERVER_URI="https://github.com/sakaki-"
 HOMEPAGE="${BASE_SERVER_URI}/${PN}"

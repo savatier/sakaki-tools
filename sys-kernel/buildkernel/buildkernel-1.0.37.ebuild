@@ -3,8 +3,6 @@
 
 EAPI=6
 
-inherit eutils
-
 DESCRIPTION="Build secure boot EFI kernel with LUKS, LVM and plymouth"
 BASE_SERVER_URI="https://github.com/sakaki-"
 #HOMEPAGE="${BASE_SERVER_URI}/${PN}"

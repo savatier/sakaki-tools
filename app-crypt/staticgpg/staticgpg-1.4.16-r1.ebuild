@@ -4,7 +4,7 @@
 
 EAPI=6
 
-inherit eutils flag-o-matic toolchain-funcs
+inherit flag-o-matic toolchain-funcs
 
 ECCVER="0.2.0"
 ECCVER_GNUPG="1.4.9"
@@ -28,6 +28,9 @@ DEPEND="dev-lang/perl"
 S="${WORKDIR}/${MY_P}"
 
 src_prepare() {
+
+    eapply_user
+
 	# Install RU man page in right location
 	sed -e "/^man_MANS =/s/ gpg\.ru\.1//" -i doc/Makefile.in || die "sed doc/Makefile.in failed"
 

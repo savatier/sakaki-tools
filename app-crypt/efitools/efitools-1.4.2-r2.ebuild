@@ -4,8 +4,6 @@
 
 EAPI=6
 
-inherit eutils
-
 DESCRIPTION="Tools for manipulating UEFI secure boot platforms"
 HOMEPAGE="git://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git"
 SRC_URI="http://blog.hansenpartnership.com/wp-uploads/2013/efitools-${PV}.tar.gz"

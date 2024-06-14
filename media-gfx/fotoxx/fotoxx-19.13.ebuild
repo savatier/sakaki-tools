@@ -5,7 +5,7 @@
 
 EAPI=6
 
-inherit eutils toolchain-funcs xdg-utils
+inherit toolchain-funcs xdg-utils
 
 DESCRIPTION="Program for improving image files made with a digital camera"
 HOMEPAGE="https://www.kornelix.net/fotoxx/fotoxx.html"
