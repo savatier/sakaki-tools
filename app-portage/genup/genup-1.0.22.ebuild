@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Update Portage tree, all installed packages, and kernel"
 BASE_SERVER_URI="https://github.com/sakaki-"
@@ -50,7 +50,7 @@ src_prepare() {
 		sed -i -e 's@USE_NOCACHE=false@USE_NOCACHE=true@g' "${S}/${PN}" || \
 			die "Failed to patch script to reflect nocache USE flag."
 	fi
-	epatch_user
+	eapply_user
 }
 src_install() {
 	dosbin "${PN}"

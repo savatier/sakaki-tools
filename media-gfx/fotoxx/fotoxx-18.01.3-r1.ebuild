@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
 inherit toolchain-funcs xdg-utils
 
@@ -33,9 +33,9 @@ RDEPEND="${DEPEND}
 	"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}.patch
-	epatch "${FILESDIR}"/${P}-champlain.patch
-	epatch "${FILESDIR}"/${P}-debian-bug-916010.patch
+	eapply "${FILESDIR}"/${P}.patch
+	eapply "${FILESDIR}"/${P}-champlain.patch
+	eapply "${FILESDIR}"/${P}-debian-bug-916010.patch
 	default
 }
 

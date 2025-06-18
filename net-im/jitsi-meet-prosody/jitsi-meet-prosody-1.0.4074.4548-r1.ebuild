@@ -1,7 +1,7 @@
 # Copyright 2020 sakaki (sakaki@deciban.com)
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 JMVER="$(ver_cut 4)"
 DESCRIPTION="Prosody configuration and plugins for use with Jitsi Meet"

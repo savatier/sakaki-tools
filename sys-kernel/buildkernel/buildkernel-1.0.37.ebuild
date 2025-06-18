@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Build secure boot EFI kernel with LUKS, LVM and plymouth"
 BASE_SERVER_URI="https://github.com/sakaki-"

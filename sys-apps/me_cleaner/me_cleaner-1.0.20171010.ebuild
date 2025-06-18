@@ -2,7 +2,7 @@
 # License: GPL v3+
 # NO WARRANTY
 
-EAPI=7
+EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 
 inherit python-r1 git-r3

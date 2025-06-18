@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # Edited by Iade Gesso, PhD in 14th July 2020
 
-EAPI=7
+EAPI=8
 
 SRC_URI="https://github.com/Sabayon/genkernel-next/archive/v${PV}.tar.gz -> ${P}.tar.gz
          https://www.busybox.net/downloads/busybox-1.32.0.tar.bz2"

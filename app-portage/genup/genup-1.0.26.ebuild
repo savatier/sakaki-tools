@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Update Portage tree, all installed packages, and kernel"
 BASE_SERVER_URI="https://github.com/sakaki-"
@@ -39,7 +39,7 @@ src_prepare() {
 		ewarn "--no-kernel-upgrade option each time, unless you do"
 		ewarn "(otherwise, genup will fail)"
 	fi
-	epatch_user
+	eapply_user
 }
 src_install() {
 	dosbin "${PN}"

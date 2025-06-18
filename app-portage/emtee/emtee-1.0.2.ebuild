@@ -2,7 +2,7 @@
 # License: GPL v3+
 # NO WARRANTY
 
-EAPI=6
+EAPI=8
 
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc"
 

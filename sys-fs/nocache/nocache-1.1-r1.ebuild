@@ -4,7 +4,7 @@
 # Minmally adapted with thanks from
 # https://data.gpo.zugaina.org/junkdrawer/sys-fs/nocache/
 
-EAPI=7
+EAPI=8
 
 inherit multilib
 

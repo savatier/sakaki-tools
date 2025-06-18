@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Tools for manipulating UEFI secure boot platforms"
 HOMEPAGE="git://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git"
@@ -23,6 +23,6 @@ DEPEND="${RDEPEND}
 	dev-perl/File-Slurp"
 
 src_prepare() {
-	epatch "${FILESDIR}/${P}-recognize-efivarfs.patch"
-	epatch_user
+	eapply "${FILESDIR}/${P}-recognize-efivarfs.patch"
+	eapply_user
 }

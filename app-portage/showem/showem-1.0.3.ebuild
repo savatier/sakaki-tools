@@ -3,7 +3,7 @@
 # License: GPL v2
 # NO WARRANTY
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="View output of a parallel emerge from a separate terminal"
 BASE_SERVER_URI="https://github.com/sakaki-"
@@ -23,7 +23,6 @@ RDEPEND="${DEPEND}
 
 # ebuild function overrides
 src_prepare() {
-	epatch_user
 }
 src_install() {
 	dobin "${PN}"

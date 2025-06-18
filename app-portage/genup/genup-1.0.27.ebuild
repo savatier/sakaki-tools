@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Update Portage tree, all installed packages, and kernel"
 BASE_SERVER_URI="https://github.com/sakaki-"
@@ -45,7 +45,7 @@ src_prepare() {
 		sed -i -e 's@USE_EMTEE=false@USE_EMTEE=true@g' "${S}/${PN}" || \
 			die "Failed to patch script to reflect emtee USE flag."
 	fi
-	epatch_user
+	eapply_user
 }
 src_install() {
 	dosbin "${PN}"
